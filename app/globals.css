@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root { --bg: #0A1628; }
+body { background: #0A1628; color: #F5F5F0; }
+.card { @apply rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-4; }
+.btn { @apply rounded-xl px-4 py-2 font-medium; }
+.btn-teal { @apply bg-[#00C9A7] text-black; }
+.btn-gold { @apply bg-[#D4AF37] text-black; }
