@@ -1,4 +1,5 @@
 import { prisma } from "@/lib/db";
+export const dynamic = "force-dynamic";
 export default async function Dashboard() {
   const total = await prisma.prospect.count();
   const highWeak = await prisma.prospect.count({ where: { weaknessScore: { gte: 70 } } });
